@@ -1,5 +1,31 @@
 .actions {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+    background: var(--tg-theme-bg-color);
+    max-width: 100%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonRow {
+    padding: auto;
+    background: var(--tg-theme-bg-color);
+}
+
+.listings {
+    margin: 10px;
+    background: var(--tg-theme-bg-color);
+
+}
+
+.wallet {
+    margin: 10px;
+    background: var(--tg-theme-bg-color);
+}
+
+.cashout {
+    margin: 10px;
+    background: var(--tg-theme-bg-color);
 }
