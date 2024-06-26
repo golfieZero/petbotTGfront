@@ -10,13 +10,12 @@ const BackButton = () => {
     const handleClick = () => {
         navigate(-1);
     };
+    if (!tg.SettingsButton.isVisible) {
+        tg.SettingsButton.show()
+    }
 
     useEffect(() => {
         tg.onEvent('backButtonClicked', handleClick)
-        if (!tg.SettingsButton.isVisible) {
-            tg.SettingsButton.show()
-        }
-
         return () => {
             tg.offEvent('backButtonClicked', handleClick);
         };

@@ -1,31 +1,35 @@
 .actions {
-    /* display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px; */
     background: var(--tg-theme-bg-color);
     max-width: 100%;
     white-space: nowrap;
     display: flex;
     justify-content: space-evenly;
+    font-family: "Roboto", system-ui, sans-serif;
 }
 
 .buttonRow {
-    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: var(--tg-theme-bg-color);
+    padding-top: 10px;
+    padding-bottom: 8px;
+    cursor: pointer;
 }
 
-.listings {
-    margin: 10px;
+.fontIcon {
     background: var(--tg-theme-bg-color);
-
+    fill: var(--tg-theme-accent-text-color);
+    width: 32px; 
+    height: 32px; 
+    margin-bottom: 5px;
 }
 
-.wallet {
-    margin: 10px;
-    background: var(--tg-theme-bg-color);
-}
-
-.cashout {
-    margin: 10px;
+.listings, .wallet, .cashout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: var(--tg-theme-bg-color);
 }

@@ -2,6 +2,8 @@ import React from "react";
 import './ActionBar.css';
 import Button from "../Button/Button.jsx";
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 const ActionBar = () => {
     const navigate = useNavigate();
@@ -13,14 +15,17 @@ const ActionBar = () => {
     return (
         <section>
             <div className="actions">
-                <div className="buttonRow">
-                    <Button className={'listings'} onClick={handleViewListings}>Заказы</Button>
+                <div className="buttonRow" onClick={handleViewListings}>
+                    <FontAwesomeIcon className="fontIcon" icon={faInfoCircle} />
+                    <Button className={'listings'}>Заказы</Button>
                 </div>
-                <div className="buttonRow">
-                    <Button className={'wallet'} onClick={handleTopUpWallet}>Пополнить</Button>
+                <div className="buttonRow" onClick={handleTopUpWallet}>
+                    <FontAwesomeIcon className="fontIcon" icon={faInfoCircle} />
+                    <Button className={'wallet'} >Пополнить</Button>
                 </div>
-                <div className="buttonRow">
-                    <Button className={'cashout'} onClick={handleCashOut}>Вывод</Button>
+                <div className="buttonRow" onClick={handleCashOut}>
+                    <FontAwesomeIcon className="fontIcon" icon={faInfoCircle} />
+                    <Button className={'cashout'} >Вывод</Button>
                 </div>
             </div>
         </section>
